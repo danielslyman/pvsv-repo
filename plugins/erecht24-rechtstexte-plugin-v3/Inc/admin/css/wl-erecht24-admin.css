@@ -1,0 +1,318 @@
+/**
+ * All of the CSS for your admin-specific functionality should be included in this file.
+ *
+ * The file is enqueued from inc/admin/class-admin.php.
+ */
+
+.erecht24-settings-wrapper {
+    margin: 25px 40px 0 20px;
+    max-width: 1450px;
+}
+.erecht24-settings-wrapper form {
+    background: #fff;
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+}
+.erecht24-settings-wrapper .erecht24-logo {
+    float:right;
+}
+@media only screen and (max-width: 480px) {
+    .erecht24-settings-wrapper .erecht24-logo {
+        display:none;
+    }
+}
+.erecht24-settings-wrapper h1 {
+    margin-top: 15px;
+    font-size: 2.1em;
+}
+.erecht24-settings-wrapper .about-text {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    margin: 1em 0 1em 0;
+    color: #555d66;
+}
+.erecht24-settings-wrapper .nav-tab-wrapper {
+    margin-bottom: 30px !important;
+}
+.erecht24-settings-wrapper .nav-tab-wrapper .dashicons {
+    margin-right:5px;
+    margin-top: 3px;
+    font-size: 17px;
+}
+.erecht24-settings-wrapper .nav-tab-wrapper .dashicons-warning {
+    color:red;
+}
+.erecht24-settings-wrapper .introduction {
+    margin: 1em 0 1em 0;
+    color: #555d66;
+}
+.erecht24-settings-wrapper input[type=text] {
+    width: 350px;
+    max-width:100%;
+}
+.erecht24-settings-wrapper input.modernswitch {
+    position: relative;
+    appearance: none; outline: none;
+    width: 50px; height: 30px;
+    background-color: #ffffff; border: 1px solid #D9DADC;
+    border-radius: 50px; box-shadow: inset -20px 0 0 0 #ffffff;
+    transition-duration: 200ms;
+}
+
+.erecht24-settings-wrapper .leftLabel + input.modernswitch {
+    border: 1px solid #4ED164;
+    box-shadow: inset -20px 0 0 0 #4ED164;
+
+}
+.erecht24-settings-wrapper input.modernswitch:after {
+    content: "";
+    position: absolute;
+    top: 1px; left: 1px;
+    width: 26px; height: 26px;
+    background-color: transparent;
+    border-radius: 50%; box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+.erecht24-settings-wrapper input.modernswitch:checked {
+    border-color: #4ED164;
+    box-shadow: inset 20px 0 0 0 #4ED164;
+}
+.erecht24-settings-wrapper input.modernswitch:checked:before {
+    content: "";
+}
+.erecht24-settings-wrapper input.modernswitch:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+
+.erecht24-settings-wrapper .checkbox-description {
+    margin-left:5px;
+    font-size: 0.9em;
+    color:#555d66;
+    padding-top:1px;
+    display:inline;
+}
+.erecht24-settings-wrapper .lastupdate {
+    font-size:0.95em;
+    color:#555d66;
+    font-family: "Courier New";
+}
+
+.erecht24-settings-wrapper .poweredby {
+    margin-top:35px;
+}
+.erecht24-settings-wrapper .poweredby p,
+.erecht24-settings-wrapper .poweredby p a
+{
+    color:#a7a7a7;
+}
+
+.mce-ico.mce-i-erecht24 {
+    background-image: url('../img/logo-erecht24-pluginicon.png');
+}
+
+.notice-posts-list {
+    list-style: disc;
+    padding-inline-start: 40px;
+}
+
+.erecht24-statusError{
+    color: red;
+}
+
+.erecht24-statusrow:before{
+    font-size:14px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+
+.erecht24-row-error::before{
+    content: "\2716";
+    color: red;
+}
+
+.erecht24-row-warning::before{
+    content: "\2716";
+    color: grey;
+}
+
+.erecht24-row-check::before{
+    content: "\2714";
+    color: green;
+}
+
+.erecht24-status-tab-error{
+    color: red;
+}
+
+.erecht24-copy-notice{
+    color: green;
+    position: relative;
+    margin: auto 0 auto 10px;
+    display: none;
+}
+
+.erecht24_debug_button_container{
+    display: flex;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#ajaxLoader {
+    position: fixed;
+    display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 100002;
+}
+
+.showAjaxLoader #ajaxLoader {
+    display: flex;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    z-index: 100002;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #29708f;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 10px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #29708f;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}

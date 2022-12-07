@@ -1,0 +1,959 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eRecht24.de Legal texts for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 11:42+0100\n"
+"PO-Revision-Date: 2022-07-13 13:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: erecht24.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: App/Api/BaseApi.php:130
+msgid "Wrong api url! Please contact admin."
+msgstr "Fehlerhafte API Url. Bitte kontaktieren Sie den Administrator."
+
+#: App/Api/BaseApi.php:148
+msgid "No Response received. Please contact the admin."
+msgstr ""
+"Die API Schnittstelle liefert keine Antwort. Bitte kontaktieren Sie den "
+"Administrator."
+
+#: App/Controller/Rest/Admin/AjaxUpdateSubOption.php:57
+msgid "Automatic saving was successful."
+msgstr "Automatisch gespeichert."
+
+#: App/Controller/Rest/Admin/AjaxUpdateSubOption.php:108
+msgid ""
+"Your changes could not be saved automatically. Please click the button "
+"\"Save changes\". Reason: Required parameters are missing."
+msgstr ""
+"Ihre Änderungen konnten nicht automatisch gespeichert werden. Bitte klicken "
+"Sie auf die Schaltfläche \"Änderungen speichern\". Begründung: Erforderliche "
+"Parameter fehlen."
+
+#: App/Controller/Rest/Admin/AjaxUpdateSubOption.php:124
+msgid ""
+"Your changes could not be saved automatically. Please click the button "
+"\"Save changes\". Reason: No WP_Option specified. Please try again later."
+msgstr ""
+"Ihre Änderungen konnten nicht automatisch gespeichert werden. Bitte klicken "
+"Sie auf die Schaltfläche \"Änderungen speichern\". Begründung: Keine "
+"WP_Option angegeben. Bitte versuchen Sie es später noch einmal."
+
+#: App/Controller/Rest/Admin/AjaxUpdateSubOption.php:138
+msgid ""
+"Your changes could not be saved automatically. Please click the button "
+"\"Save changes\". Reason: Unsupported wp_option specified. Abort."
+msgstr ""
+"Ihre Änderungen konnten nicht automatisch gespeichert werden. Bitte klicken "
+"Sie auf die Schaltfläche \"Änderungen speichern\". Begründung: Nicht "
+"unterstützte wp_option angegeben."
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:112
+msgid "No Client in Database stored. Deletion not needed"
+msgstr ""
+"Es war kein API Client in der Datenbank gespeichert. Überspringe Löschvorgang"
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:168
+msgid "Valid API Key. Client was successfully created."
+msgstr "Gültiger API-Schlüssel. Der API Client wurde erfolgreich eingerichtet."
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:183
+msgid "No Action required"
+msgstr "Keine Aktion erforderlich"
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:201
+msgid "Old client successfully deleted."
+msgstr "Der alte API Client wurde erfolgreich gelöscht."
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:225
+msgid "Api Client deletion was forced"
+msgstr "Löschung des Api-Clients wurde erzwungen"
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:244
+#: App/Controller/Rest/Admin/RefreshApiConnectionController.php:111
+msgid "There was a connection error. Please check the Api key."
+msgstr ""
+"Es gab einen Verbindungsfehler. Bitte überprüfen Sie den API Schlüssel."
+
+#: App/Controller/Rest/Admin/CheckApiKeyController.php:263
+msgid "There was an error with new Api connection. Please check the Api key."
+msgstr ""
+"Es gab einen Fehler mit der API Verbindung. Bitte überprüfen Sie den API "
+"Schlüssel."
+
+#: App/Controller/Rest/Admin/ImportAllDocumentsController.php:49
+#: App/Controller/Rest/Admin/ImportSingleDocumentController.php:128
+#, php-format
+msgid "%s successfully imported."
+msgstr "%s erfolgreich importiert."
+
+#: App/Controller/Rest/Admin/ImportAllDocumentsController.php:56
+#, php-format
+msgid "%s could not be imported. Please try again later."
+msgstr ""
+"%s konnte nicht importiert werden. Bitte versuchen Sie es später noch einmal."
+
+#: App/Controller/Rest/Admin/ImportAllDocumentsController.php:97
+#: App/Controller/Rest/Admin/ImportSingleDocumentController.php:87
+msgid "No API Client available. Please check document type and / or API key."
+msgstr ""
+"Es gab einen Fehler mit dem API Client. Bitte überprüfen Sie den Dokumenttyp "
+"und den API-Schlüssel."
+
+#: App/Controller/Rest/Admin/ImportSingleDocumentController.php:144
+#: App/Controller/Rest/Admin/SyncLocalTextController.php:136
+msgid "No Document type specified. Please try again later."
+msgstr ""
+"Kein Dokumententyp angegeben. Bitte versuchen Sie es später noch einmal."
+
+#: App/Controller/Rest/Admin/ImportSingleDocumentController.php:163
+msgid "There was a connection error. Please try again later."
+msgstr ""
+"Es gab einen Verbindungsfehler. Bitte versuchen Sie es später noch einmal."
+
+#: App/Controller/Rest/Admin/RefreshApiConnectionController.php:112
+msgid ""
+"The problem could not be solved automatically. Please check your API key and "
+"the settings in your personal eRecht24 customer portal."
+msgstr ""
+"Das Problem konnte nicht automatisch gelöst werden. Bitte überprüfen Sie "
+"Ihren API-Schlüssel und die Einstellungen in Ihrem persönlichen eRecht24 "
+"Projekt Manager."
+
+#: App/Controller/Rest/Admin/SyncLocalTextController.php:118
+msgid "Legal texts successfully adopted."
+msgstr "Rechtstexte erfolgreich synchronisiert."
+
+#: App/Controller/Rest/Admin/SyncLocalTextController.php:150
+msgid "Illegal document type specified. Abort."
+msgstr "Unzulässiger Dokumententyp angegeben. Abbruch."
+
+#: App/Controller/Rest/Admin/SyncLocalTextController.php:164
+msgid "No data has been imported yet. Please import data first."
+msgstr ""
+"Es wurden noch keine Dokumente importiert. Bitte importieren Sie zuerst das "
+"Dokument."
+
+#: App/Helper.php:67
+msgid ""
+"An Error occurred, Please try again later. If the error persists contact the "
+"admin."
+msgstr ""
+"Ein Fehler ist aufgetreten, Bitte versuchen Sie es später erneut. Wenn der "
+"Fehler weiterhin auftritt, wenden Sie sich an den Administrator."
+
+#: App/Helper.php:157 Inc/admin/Widgets/ElementorWidget.php:94
+#: Inc/admin/views/WpOptionPage/TabMenu.php:22
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:51
+msgid "Imprint"
+msgstr "Impressum"
+
+#: App/Helper.php:160 Inc/admin/Widgets/ElementorWidget.php:95
+#: Inc/admin/views/WpOptionPage/TabMenu.php:25
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: App/Helper.php:164 Inc/admin/Widgets/ElementorWidget.php:96
+#: Inc/admin/views/WpOptionPage/TabMenu.php:29
+msgid "Privacy policy for social media profile"
+msgstr "Datenschutz für Social-Media-Profile"
+
+#: App/Hooks/Filter/ClientDeleted.php:39
+msgid "Client successfully deleted."
+msgstr "API Client erfolgreich gelöscht."
+
+#: App/Service/StatusCheck/ApiConfigCheck.php:55
+msgid "The Api interface is configured correctly."
+msgstr "Die API ist korrekt konfiguriert."
+
+#: App/Service/StatusCheck/ApiConfigCheck.php:66
+#: App/Service/StatusCheck/ApiConnectionCheck.php:43
+msgid ""
+"No Api key available. Please add open tab \"API key\" and add your api key."
+msgstr ""
+"Es wurde kein API-Schlüssel angegeben. Bitte überprüfen Sie die "
+"Einstellungen im Tab \"API-Schlüssel\"."
+
+#: App/Service/StatusCheck/ApiConfigCheck.php:77
+msgid ""
+"The data from your database is different from the data on the eRecht24 "
+"server. Please click the button \"Refresh Connection\"."
+msgstr ""
+"Die Daten aus Ihrer Datenbank unterscheiden sich von den Daten des eRecht24 "
+"Projekt Managers. Bitte klicken Sie auf die Schaltfläche \"Verbindung "
+"aktualisieren\"."
+
+#: App/Service/StatusCheck/ApiConfigCheck.php:88
+msgid ""
+"The Api Client settings in your database are faulty. Please click the button "
+"\"Refresh Connection\". "
+msgstr ""
+"Die Einstellungen des API-Clients in Ihrer Datenbank sind fehlerhaft. Bitte "
+"klicken Sie auf die Schaltfläche \"Verbindung aktualisieren\". "
+
+#: App/Service/StatusCheck/ApiConfigCheck.php:99
+msgid ""
+"The remote Api Client settings are faulty. Please click the button \"Refresh "
+"Connection\". "
+msgstr ""
+"Die API-Client Einstellungen im eRecht24 Projekt Manager sind fehlerhaft. "
+"Bitte klicken Sie auf die Schaltfläche \"Verbindung aktualisieren\". "
+
+#: App/Service/StatusCheck/ApiConnectionCheck.php:31
+msgid "Connection to eRecht24 server could be established successfully."
+msgstr ""
+"Die Verbindung zum eRecht24 Server konnte erfolgreich hergestellt werden."
+
+#: App/Service/StatusCheck/ApiConnectionCheck.php:59
+msgid ""
+"Connection to the eRecht24 server could not be established. Please contact "
+"the admin."
+msgstr "Die Verbindung zum eRecht24 Server liefert keine Antwort."
+
+#: App/Service/StatusCheck/DomainChangeCheck.php:34
+msgid "WordPress Address (URL) is unchanged."
+msgstr "Die WordPress-Adresse (URL) ist unverändert."
+
+#: App/Service/StatusCheck/DomainChangeCheck.php:45
+msgid ""
+"The WordPress Address (URL) changed since you activated the eRecht24 API "
+"client. You have to update the client."
+msgstr ""
+"Die WordPress-Adresse (URL) wurde geändert. Die Verbindung zu eRecht24 muss "
+"aktualisiert werden."
+
+#: App/Service/StatusCheck/PingPongCheck.php:26
+msgid "The eRecht24 Server is able to push new data to your wordpress site."
+msgstr ""
+"Der eRecht24 Server ist in der Lage, neue Daten in Ihre WordPress-Seite zu "
+"pushen."
+
+#: App/Service/StatusCheck/PingPongCheck.php:40
+msgid ""
+"The eRecht24 Server is unable to push new data to your wordpress site. A new "
+"site url or htaccess protection can cause those issues. Please contact the "
+"admin."
+msgstr ""
+"Der eRecht24 Server ist nicht in der Lage, neue Daten auf Ihre WordPress-"
+"Seite zu pushen. Eine neue Site-URL- oder htaccess-Schutz können diese "
+"Probleme verursachen. Bitte kontaktieren Sie den Administrator."
+
+#: App/Service/StatusCheck/PingPongCheck.php:41
+msgid "No additional information"
+msgstr "Keine zusätzlichen Informationen"
+
+#: App/Service/StatusCheck/WpRemoteCheck.php:34
+#: App/View/Admin/WpOptionPage/StatusTab.php:64
+msgid "wp_remote_request is working properly."
+msgstr "wp_remote_request funktioniert ordnungsgemäß."
+
+#: App/Service/StatusCheck/WpRemoteCheck.php:35
+msgid ""
+"wp_remote_request is not working properly. Please check your php.ini or "
+"contact your hosting provider."
+msgstr ""
+"wp_remote_request funktioniert nicht ordnungsgemäß. Bitte überprüfen Sie die "
+"php.ini oder kontaktieren sie ihren Webhosting-Anbieter."
+
+#: App/View/Admin/WpOptionPage/StatusTab.php:164
+msgid "checking"
+msgstr "Funktion wird getestet"
+
+#: Inc/admin/Admin.php:122 Inc/admin/Admin.php:170 Inc/admin/Admin.php:184
+#: Inc/admin/Admin.php:189
+msgid "eRecht24 Legal texts for WordPress"
+msgstr "eRecht24 Rechtstexte für WordPress"
+
+#: Inc/admin/Admin.php:158 Inc/frontend/js/wl-erecht24-gutenberg-de.js:45
+msgid "Settings"
+msgstr "eRecht24 Rechtstexte"
+
+#: Inc/admin/Admin.php:170
+msgid "No API key was set"
+msgstr "Es wurde kein API-Schlüssel festgelegt"
+
+#: Inc/admin/Admin.php:171
+msgid "Configure API-Key"
+msgstr "API-Schlüssel konfigurieren"
+
+#: Inc/admin/Admin.php:218
+msgid ""
+"Your eRecht24 legal texts plugin for WordPress has been successfully "
+"updated. The new version offers you a wider range of functions. During the "
+"installation, we automatically transferred your existing data from the "
+"previous version of the eRecht24 Legal Texts plugin into the new "
+"configuration. Please check whether your imprint and your data protection "
+"declaration are still displayed correctly on your website. If you discover "
+"any problems, please refer to the documentation of the plugin."
+msgstr ""
+"Ihr eRecht24 Rechtstexte Plugin für WordPress wurde erfolgreich "
+"aktualisiert. Die neue Version bietet Ihnen einen größeren Funktionsumfang. "
+"Wir haben bei der Installation Ihre bestehenden Daten aus der vorigen "
+"Version des eRecht24 Rechtstexte Plugins automatisch in die neue "
+"Konfiguration übernommen. Bitte prüfen Sie, ob Ihr Impressum und Ihre "
+"Datenschutzerklärung auf Ihrer Website nach wie vor korrekt angezeigt "
+"werden. Sollten Sie Probleme entdecken, schauen Sie bitte in die "
+"Dokumentation des Plugins."
+
+#: Inc/admin/Admin.php:223
+msgid ""
+"On the following pages/post an old eRecht24 shortcode is still available. "
+"Search for <code>[impressum]</code> or <code>[datenschutz]</code> in the "
+"content and replace them with the new shortcodes. You can find detailed "
+"instructions <a href=\"options-general.php?page=erecht24-"
+"settings&tab=documentation\">here</a>."
+msgstr ""
+"Auf folgenden Seiten/Beiträgen ist noch ein alter eRecht24 Shortcode "
+"vorhanden. Suchen Sie im Inhalt nach <code>[impressum]</code> oder "
+"<code>[datenschutz]</code>\n"
+"                 und ersetzen Sie diese durch die neuen Shortcodes. Eine "
+"ausführliche Anleitung finden sie <a href=\"options-general.php?"
+"page=erecht24-settings&tab=documentation\">hier</a>."
+
+#: Inc/admin/Admin.php:234
+msgid ""
+"To permanently hide this message press <a href=\"\" id="
+"\"banOldShortcodeWarning\">here</a>."
+msgstr ""
+"Um diese Meldung permanent zu unterdrücken klicken Sie <a href=\"\" id="
+"\"banOldShortcodeWarning\">hier</a>."
+
+#: Inc/admin/Admin.php:249 Inc/admin/Admin.php:250
+msgid "eRecht24 Settings"
+msgstr "eRecht24 Rechtstexte"
+
+#: Inc/admin/Admin.php:280 Inc/admin/Admin.php:287
+#: Inc/admin/views/WpOptionPage/TabMenu.php:18
+msgid "API Key"
+msgstr "API-Schlüssel"
+
+#: Inc/admin/Admin.php:296
+msgid ""
+"Enter here your API key from <a href=\"https://www.e-recht24.de/mitglieder/"
+"tools/projekt-manager/\" target=\"_blank\">eRecht24 project manager for "
+"websites</a>."
+msgstr ""
+"Geben Sie hier Ihren API-Schlüssel ein, welchen Sie für Ihre Website im <a "
+"href=\"https://www.e-recht24.de/mitglieder/tools/projekt-manager/\" target="
+"\"_blank\">eRecht24 Projekt Manager für Websites</a> erzeugt haben."
+
+#: Inc/admin/Admin.php:302 Inc/admin/Admin.php:361
+msgid "Syncronize"
+msgstr "Synchronisieren"
+
+#: Inc/admin/Admin.php:307
+msgid "Syncronize and save all legal texts"
+msgstr "Alle Rechtstexte synchronisieren und speichern"
+
+#: Inc/admin/Admin.php:311
+msgid "This function is available once valid api-key has been entered."
+msgstr ""
+"Diese Funktion ist erst nach der Eingabe eines gültigen API-Schlüssels "
+"verfügbar."
+
+#: Inc/admin/Admin.php:347
+msgid "Data source"
+msgstr "Datenquelle"
+
+#: Inc/admin/Admin.php:366
+msgid "Syncronize and save data"
+msgstr "Daten synchronisieren und speichern"
+
+#: Inc/admin/Admin.php:374
+msgid "Import"
+msgstr "Importieren"
+
+#: Inc/admin/Admin.php:379
+msgid "Overwrite local data with latest synchronised data"
+msgstr "Lokale Daten mit den zuletzt synchronisierten Texten überschreiben"
+
+#: Inc/admin/Admin.php:388
+msgid "HTML Code (DE)"
+msgstr "HTML-Code (DE)"
+
+#: Inc/admin/Admin.php:404 Inc/admin/Admin.php:435 Inc/admin/Admin.php:482
+#: Inc/admin/Admin.php:497
+msgid "Last updated"
+msgstr "Letzte Aktualisierung"
+
+#: Inc/admin/Admin.php:419
+msgid "HTML Code (DE) - Local"
+msgstr "HTML-Code (DE) - Lokal"
+
+#: Inc/admin/Admin.php:450
+msgid "HTML Code (EN)"
+msgstr "HTML-Code (EN)"
+
+#: Inc/admin/Admin.php:466
+msgid "HTML Code (EN) - Local"
+msgstr "HTML-Code (EN) - Lokal"
+
+#: Inc/admin/Admin.php:530 Inc/admin/views/WpOptionPage/TabMenu.php:33
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: Inc/admin/Admin.php:537
+msgid "Google Analytics Tracking ID"
+msgstr "Google Analytics Tracking ID"
+
+#: Inc/admin/Admin.php:546
+msgid "Enter here your Google Analytics ID like G-ABCDABCD or UA-12345687-1"
+msgstr ""
+"Geben Sie hier Ihre Google Analytics Tracking ID im Format G-ABCDABCD oder "
+"UA-12345687-1 ein"
+
+#: Inc/admin/Admin.php:553
+msgid "Enable Google Analytics?"
+msgstr "Tracking-Code einbinden?"
+
+#: Inc/admin/Admin.php:567
+msgid "Enable Usercentrics consent management"
+msgstr "Usercentrics-Cookie-Einwilligung"
+
+#: Inc/admin/Admin.php:575
+msgid ""
+"If you use the Usercentrics Consent Management Platform on your website, you "
+"can activate this option. Thus, your Google Analytics source code is "
+"initially delivered in a deactivated state and only activated after the user "
+"has given the cookie consent via the cookie banner."
+msgstr ""
+"Sofern die Usercentrics Consent Management Platform in Ihrer Website nutzen, "
+"können Sie diese Option aktivieren. Somit wird Ihr Google Analytics "
+"Quellcode zunächst in deaktiviertem Zustand ausgeliefert und erst nach der "
+"Erteilung der Cookie-Einwilligung durch den Nutzer über das Cookie-Banner "
+"aktiviert."
+
+#: Inc/admin/Admin.php:582
+msgid "Enable Google Analytics Opt Out?"
+msgstr "Opt-Out-Code einbinden?"
+
+#: Inc/admin/Admin.php:593
+msgid ""
+"If you <b>against our recommendation</b> do not obtain active consent for "
+"the use of Google Analytics, you should at least give the option to so-"
+"called opt-out. To do this, activate this option and proceed as follows:"
+msgstr ""
+"Wenn Sie <b>entgegen unserer Empfehlung</b> keine aktive Einwilligung für "
+"die Nutzung von Google Analytics einholen, sollten Sie zumindest die "
+"Möglichkeit zum sogenannten Opt-Out geben. Aktivieren Sie dazu diese Option "
+"und gehen Sie wie folgt vor:"
+
+#: Inc/admin/Admin.php:596
+msgid ""
+"Add the following text below your privacy policy: Disable Google Analytics"
+msgstr ""
+"Fügen Sie unterhalb Ihrer Datenschutzerklärung folgenden Text ein: Google "
+"Analytics deaktivieren"
+
+#: Inc/admin/Admin.php:599
+msgid "Insert the following HTML code below this text:"
+msgstr "Fügen Sie unterhalb dieses Texts folgenden HTML-Code ein:"
+
+#: Inc/admin/Admin.php:599
+msgid "Disable Google Analytics"
+msgstr "Google Analytics deaktivieren"
+
+#: Inc/admin/Admin.php:602
+msgid ""
+"WordPress may remove the Javascript function. Check on your website by "
+"clicking the opt-out button whether the cookie is set. If this button does "
+"not work and thus the opt-out cookie is not set after the click, your Google "
+"Analytics integration is <b>not legally compliant</b> without using a "
+"Consent tool!"
+msgstr ""
+"WordPress entfernt unter Umständen die Javascript-Funktion. Prüfen Sie auf "
+"Ihrer Website durch Anklicken des Opt-Out-Buttons, ob der Cookie gesetzt "
+"wird. Funktioniert dieser Button nicht und wird somit nach dem Klick der Opt-"
+"Out-Cookie nicht gesetzt, ist Ihre Google-Analytics-Einbindung ohne "
+"Verwendung eines Consent-Tools <b>nicht rechtssicher</b>!"
+
+#: Inc/admin/Admin.php:674
+msgid "Please enter the API key provided by eRecht24 and hit save."
+msgstr ""
+"Bitte geben Sie den von eRecht24 bereitgestellten API-Schlüssel ein und "
+"klicken Sie auf Änderungen speichern."
+
+#: Inc/admin/Admin.php:681
+msgid ""
+"Choose here whether you want to get the imprint data from eRecht24 server or "
+"to make your own local entries."
+msgstr ""
+"Wählen Sie hier, ob Sie die aktuellste Version Ihres Impressums vom eRecht24 "
+"Projekt Manager abrufen möchten bzw. dieses durch den eRecht24 Projekt "
+"Manager eingefügt werden kann oder ob Sie Ihr Impressum lokal pflegen "
+"möchten."
+
+#: Inc/admin/Admin.php:688
+msgid ""
+"Choose here whether you want to get the privacy police data from the "
+"eRecht24 server or to make your own local entries."
+msgstr ""
+"Wählen Sie hier, ob Sie die aktuellste Version Ihrer Datenschutzerklärung "
+"vom eRecht24 Projekt Manager abrufen möchten bzw. diese durch den eRecht24 "
+"Projekt Manager eingefügt werden kann oder ob Sie Ihre Datenschutzerklärung "
+"lokal pflegen möchten."
+
+#: Inc/admin/Admin.php:695
+msgid ""
+"Choose here whether you want to get the privacy police for social media "
+"profiles data from the eRecht24 server or to make your own local entries."
+msgstr ""
+"Wählen Sie hier, ob Sie die aktuellste Version Ihrer Datenschutzerklärung "
+"für Social-Media-Profile vom eRecht24 Projekt Manager abrufen möchten bzw. "
+"diese durch den eRecht24 Projekt Manager eingefügt werden kann oder ob Sie "
+"Ihre Datenschutzerklärung für Social-Media-Profile lokal pflegen möchten."
+
+#: Inc/admin/Admin.php:702
+msgid ""
+"If you use Google Analytics, enter your Property ID here. The tracking code "
+"with opt-out will be automatically generated by the plugin."
+msgstr ""
+"Sie können den vollständigen Google Analytics Tracking-Code inkl. "
+"Codesnippet für das Setzen des Opt-Out-Cookies auch über dieses Plugin "
+"generieren lassen."
+
+#: Inc/admin/Admin.php:718
+msgid "Project Manager"
+msgstr "eRecht24 Projekt Manager"
+
+#: Inc/admin/Admin.php:720
+msgid "local Version"
+msgstr "Lokale Version"
+
+#: Inc/admin/Widgets/ElementorWidget.php:39 Inc/frontend/Frontend.php:166
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:17
+msgid "eRecht24"
+msgstr "eRecht24"
+
+#: Inc/admin/Widgets/ElementorWidget.php:83
+msgid "Content"
+msgstr "Inhalt"
+
+#: Inc/admin/Widgets/ElementorWidget.php:91
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:49
+msgid "Type"
+msgstr "Typ"
+
+#: Inc/admin/Widgets/ElementorWidget.php:105
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:65
+msgid "Language"
+msgstr "Sprache"
+
+#: Inc/admin/Widgets/ElementorWidget.php:108
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:67
+msgid "German"
+msgstr "Deutsch"
+
+#: Inc/admin/Widgets/ElementorWidget.php:109
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:68
+msgid "English"
+msgstr "Englisch"
+
+#: Inc/admin/Widgets/ElementorWidget.php:117
+msgid "Remove title"
+msgstr "Titel entfernen"
+
+#: Inc/admin/views/WpOptionPage.php:13
+msgid "eRecht24 - Disclaimer texts"
+msgstr "eRecht24 Rechtstexte Plugin"
+
+#: Inc/admin/views/WpOptionPage.php:16
+msgid ""
+"Here you can enable or disable various core features of the plugin in order "
+"to keep the site optimized for your needs."
+msgstr "Konfigurieren Sie hier die Funktionalität des Plugins."
+
+#: Inc/admin/views/WpOptionPage.php:27
+msgid ""
+"Powered by <a href=\"https://www.e-recht24.de\" target=\"_blank\">eRecht24</"
+"a>"
+msgstr ""
+"Powered by <a href=\"https://www.e-recht24.de\" target=\"_blank\">eRecht24</"
+"a>"
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:9
+msgid "Status overview"
+msgstr "Statusübersicht"
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:10
+msgid ""
+"You can check here if your server satisfies the system requirements to run "
+"the plugin and if your server can reach the eRecht24 servers."
+msgstr ""
+"Hier können Sie prüfen, ob Ihr Server die Systemvoraussetzungen für dieses "
+"Plugin erfüllt und ob die eRecht24-Server erreichbar sind."
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:19
+msgid ""
+"In case you need support please send an e-mail and attach debug information "
+"by following these simple steps:"
+msgstr ""
+"Falls Sie Unterstützung benötigen, senden Sie uns bitte eine E-Mail.\n"
+"Fügen Sie die notwendigen Debuginformationen hinzu, indem Sie diesen "
+"Schritten folgen:"
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:22
+msgid ""
+"Write an E-Mail to <a href=\"mailto:support@e-recht24.de\"> support@e-"
+"recht24.de </a>."
+msgstr ""
+"Schreiben Sie eine E-Mail an <a href=\"mailto:support@e-recht24.de\"> "
+"support@e-recht24.de </a>."
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:25
+msgid "Describe your Problem as detailed as possible."
+msgstr "Beschreiben Sie das Problem so detailliert wie möglich."
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:28
+msgid ""
+"Click the button labeled \"Copy debug information into your clipboard\"."
+msgstr ""
+"Klicken Sie auf den Button mit der Aufschrift \"Debuginformationen in die "
+"Zwischenablage kopieren\"."
+
+#: Inc/admin/views/WpOptionPage/StatusTab.php:31
+msgid ""
+"Add the information to your email by pasting it with \"ctrl+v\" or by right "
+"clicking and selecting paste."
+msgstr ""
+"Fügen Sie die Informationen in die E-Mail ein, indem Sie \"Strg\" + \"V\" "
+"drücken oder indem Sie einen Rechtsklick machen und auf \"Einfügen\" klicken."
+
+#: Inc/admin/views/WpOptionPage/StatusTab/DebugData.php:10
+#: Inc/admin/views/WpOptionPage/StatusTab/DebugData.php:18
+msgid "copied to clipboard"
+msgstr "In die Zwischenablage eingefügt"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/DebugData.php:15
+msgid "Copy debug information into your clipboard"
+msgstr "Debuginformationen in die Zwischenablage kopieren"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:9
+msgid ""
+"Please check the following information, the plugin is not working properly."
+msgstr ""
+"Bitte überprüfen Sie die folgenden Informationen, die Funktionalität des "
+"Plugins ist gestört."
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:14
+msgid "wp_remote_request is working"
+msgstr "wp_remote_request funktioniert"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:15
+msgid "eRecht24 Server is available"
+msgstr "eRecht24 Server ist erreichbar"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:16
+msgid "Configuration is valid"
+msgstr "Das eRecht24 Plugin ist korrekt konfiguriert"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:17
+msgid "eRecht24 server can push"
+msgstr "eRecht24 Server erreicht das WordPress"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:18
+msgid "WordPress Address (URL) did not change"
+msgstr "WordPress-Adresse (URL)  ist unverändert"
+
+#: Inc/admin/views/WpOptionPage/StatusTab/StatusTable.php:24
+msgid "Refresh Connection"
+msgstr "Verbindung auffrischen"
+
+#: Inc/admin/views/WpOptionPage/TabMenu.php:37
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: Inc/admin/views/WpOptionPage/TabMenu.php:41
+msgid "Plugin Status"
+msgstr "Pluginstatus"
+
+#: Inc/frontend/Frontend.php:191 Inc/frontend/Frontend.php:193
+msgid "Not found"
+msgstr "Es wurde nichts gefunden"
+
+#: Inc/frontend/Frontend.php:201
+msgid ""
+"Unfortunately no legal text was found. Please check your eRecht24 settings."
+msgstr ""
+"Es wurde leider kein Rechtstext gefunden. Bitte überprüfen Sie Ihre "
+"Einstellungen im eRecht24 Rechtstexte Plugin."
+
+#: Inc/frontend/Frontend.php:249
+msgid ""
+"Tracking by Google Analytics has been deactivated in your browser for this "
+"website."
+msgstr ""
+"Das Tracking durch Google Analytics wurde in Ihrem Browser für diese Website "
+"deaktiviert."
+
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:52
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"
+
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:53
+msgid "Privacy Policy for social media"
+msgstr "Datenschutzerklärung für Social-Media-Profile"
+
+#: Inc/frontend/js/wl-erecht24-gutenberg-de.js:79
+msgid "Remove H1"
+msgstr "Titel entfernen"
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:54
+msgid "View details"
+msgstr "Details anzeigen"
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr "Mehr Informationen über %s"
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr "Auf Aktualisierungen prüfen"
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:214
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "Das %s Plugin ist aktuell."
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:216
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Eine neue Version des Plugins %s ist verfügbar."
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:218
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Konnte nicht prüfen, ob Updates für das Plugin %s verfügbar sind."
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:224
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Unbekannter Status für Aktualisierungscheck \"%s\""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p11/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "Es steht kein Änderungsprotokoll zur Verfügung."
+
+#. Plugin Name of the plugin/theme
+msgid "eRecht24 legal texts for WordPress"
+msgstr "eRecht24 Rechtstexte für WordPress"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.e-recht24.de/"
+msgstr "https://www.e-recht24.de/"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin allows the easy integration of imprint and privacy policy of "
+"eRecht24."
+msgstr ""
+"Dieses Plugin ermöglicht die einfache und rechtssichere Integration von "
+"Impressum und Datenschutzerklärung, welche über eRecht24 erzeugt wurden."
+
+#. Author of the plugin/theme
+#, fuzzy
+#| msgid "Weslink GmbH"
+msgid "eRecht24, Weslink GmbH"
+msgstr "Weslink GmbH"
+
+#~ msgid "Every 3 Days"
+#~ msgstr "Alle 3 Tage"
+
+#~ msgid "imprint"
+#~ msgstr "Impressum"
+
+#~ msgid "Document successfully imported."
+#~ msgstr "Das Dokument wurde erfolgreich importiert."
+
+#~ msgid "https://weslink.de"
+#~ msgstr "https://weslink.de"
+
+#~ msgid "There was an error deleting old Api client"
+#~ msgstr ""
+#~ "Beim Löschen des alten API Clients ist ein Fehler ausgetreten. Bitte "
+#~ "versuchen Sie es später noch einmal."
+
+#~ msgid ""
+#~ "Automatic saving has failed. To save your changes, please click on the "
+#~ "button \"Save changes\"."
+#~ msgstr ""
+#~ "Das automatische Speichern ist fehlgeschlagen. Um Ihre Änderungen zu "
+#~ "speichern, klicken Sie bitte auf die Schaltfläche \"Änderungen speichern"
+#~ "\"."
+
+#~ msgid ""
+#~ "Allow_url_fopen is not enabled, but cURL is working and replacing the "
+#~ "needed functionality."
+#~ msgstr ""
+#~ "Allow_url_fopen ist nicht aktiviert, aber cURL funktioniert und ersetzt "
+#~ "die benötigte Funktionalität."
+
+#~ msgid "Allow_url_fopen enabled"
+#~ msgstr "Allow_url_fopen Status"
+
+#~ msgid ""
+#~ "cURL is not installed on your system. Please install the php-cURL "
+#~ "extension or contact your hosting provider."
+#~ msgstr ""
+#~ "cURL ist nicht verfügbar. Bitte installieren Sie die cURL-Php-Erweiterung "
+#~ "oder kontaktieren sie ihren Webhosting-Anbieter."
+
+#~ msgid "cURL is installed and working properly."
+#~ msgstr "cURL ist installiert und funktioniert ordnungsgemäß."
+
+#~ msgid ""
+#~ "cURL is not enabled, but allow_url_fopen is enabled and replacing the "
+#~ "needed functionality."
+#~ msgstr ""
+#~ "cURL ist nicht verfügbar, aber allow_url_fopen ist aktiviert und ersetzt "
+#~ "die benötigte Funktionalität."
+
+#~ msgid "cURL availability"
+#~ msgstr "cURL verfügbar"
+
+#~ msgid "Unable to reach the eRecht24 server."
+#~ msgstr "Es kann kein Kontakt zum eRecht24-Server hergestellt werden."
+
+#~ msgid ""
+#~ "Saving api key unsuccessful, please review plugin status and system "
+#~ "requirements."
+#~ msgstr ""
+#~ "Das Speichern des API-Schlüssels ist fehlgeschlagen. Bitte überprüfen Sie "
+#~ "den Pluginstatus und die Systemvoraussetzungen."
+
+#~ msgid "Unable to delete old client remotely."
+#~ msgstr ""
+#~ "Der alte Client konnte in Ihrem Erecht24 Portal nicht automatisch "
+#~ "entfernt werden."
+
+#~ msgid "No secret was defined"
+#~ msgstr "Es wurde kein Secret definiert"
+
+#~ msgid "No type was defined"
+#~ msgstr "Es wurde kein Typ definiert"
+
+#~ msgid "Unknown type"
+#~ msgstr "Unbekannter Typ"
+
+#~ msgid "Unauthorized request. The given secret is not valid or has expired."
+#~ msgstr ""
+#~ "Nicht autorisierte Anfrage. Das angegebene Secret ist ungültig oder "
+#~ "abgelaufen."
+
+#~ msgid "no synchronised legal texts found, please synchronise and try again."
+#~ msgstr ""
+#~ "Es wurden keine synchronisierten Rechtstexte gefunden. Bitte führen Sie "
+#~ "eine Synchronisation durch und versuchen Sie es erneut."
+
+#~ msgid "import successful.<br/><br/>Please hit save to apply changes."
+#~ msgstr ""
+#~ "Rechtstexte erfolgreich übernommen.<br/><br/>Bitte klicken Sie auf "
+#~ "\"Änderungen Speichern\" um die lokalen Textversionen zu sichern und zu "
+#~ "übernehmen."
+
+#~ msgid "the following legal texts have been successfully synchronised:"
+#~ msgstr "die folgenden Rechtstexte wurden erfolgreich synchronisiert:"
+
+#~ msgid ""
+#~ "the following legal texts have not been synchronised, because their data "
+#~ "source is set to local:"
+#~ msgstr ""
+#~ "Folgende Rechtstexte konnten nicht automatisch synchronisiert werden, da "
+#~ "als Datenquelle \"lokal\" ausgewählt wurde:"
+
+#~ msgid ""
+#~ "the following legal texts have not been synchronised, because there is "
+#~ "likely no online version yet:"
+#~ msgstr ""
+#~ "Folgende Rechtstexte konnten nicht automatisch synchronisiert werden, da "
+#~ "vermutlich online noch keine Version erstellt wurde:"
+
+#~ msgid "privacy policy"
+#~ msgstr "Datenschutzerklärung"
+
+#~ msgid "privacy policy for social media profile"
+#~ msgstr "Datenschutzerklärung für Social-Media-Profile"
+
+#~ msgid "Api Key is missing"
+#~ msgstr "API-Schlüssel fehlt"
+
+#~ msgid "Privacy Policy updated"
+#~ msgstr "Datenschutzerklärung wurde aktualisiert."
+
+#~ msgid "Datenschutzerklärung aktualisiert"
+#~ msgstr "Datenschutzerklärung aktualisiert"
+
+#~ msgid "Privacy Policy for Social media profiles updated"
+#~ msgstr "Datenschutzrichtlinie für Social-Media-Profile aktualisiert"
+
+#~ msgid "Datenschutzerklärung für Social Media Profile aktualisiert"
+#~ msgstr "Datenschutzerklärung für Social Media Profile aktualisiert"
+
+#~ msgid "Imprint updated"
+#~ msgstr "Impressum aktualisiert"
+
+#~ msgid "Impressum aktualisiert"
+#~ msgstr "Impressum aktualisiert"
+
+#~ msgid "Synchronisation successful"
+#~ msgstr "Synchronisierung erfolgreich!"
+
+#~ msgid "Api key saved!"
+#~ msgstr "API-Schlüssel gespeichert!"
+
+#~ msgid "Api key is wrong or missing"
+#~ msgstr "API-Schlüssel ist falsch oder fehlt"
+
+#~ msgid ""
+#~ "Please activate the integration of the Google analytics tracking code "
+#~ "first."
+#~ msgstr "Bitte aktivieren die Einbindung des Google Tracking Codes zuerst."
+
+#~ msgid ""
+#~ "There are currently <b>problems</b> with the synchronization of your "
+#~ "legal texts between WordPress and eRecht24 if you host your website at "
+#~ "<b>IONOS</b> (formerly 1&1).<br />We are working with IONOS on a "
+#~ "solution. Please be patient.<br /><a target=\"_blank\" href=\"https://www."
+#~ "e-recht24.de/mitglieder/tools/erecht24-rechtstexte-plugin/#probleme-wp"
+#~ "\">&gt;&gt; more information about the problem</a>"
+#~ msgstr ""
+#~ "Aktuell gibt es <b>Probleme</b> mit der Synchronisierung Ihrer "
+#~ "Rechtstexte zwischen WordPress und eRecht24, wenn Sie Ihre Website bei "
+#~ "<b>IONOS</b> (vormals 1&1) hosten.<br />Wir arbeiten mit IONOS an einer "
+#~ "Lösung. Bitte haben Sie Geduld.<br /><a target=\"_blank\" href=\"https://"
+#~ "www.e-recht24.de/mitglieder/tools/erecht24-rechtstexte-plugin/#probleme-wp"
+#~ "\">&gt;&gt; weitere Informationen zum Problem</a>"
+
+#~ msgid "eRecht24.de Legal texts for WordPress"
+#~ msgstr "eRecht24 Rechtstexte für WordPress"
+
+#~ msgid "Do you like to insert Google Analytics?"
+#~ msgstr "Möchten Sie Google Analytics einfügen?"
+
+#~ msgid "Do you like to insert Google Analytics Opt Out?"
+#~ msgstr "Möchten Sie Google Analytics Opt Out einfügen?"
+
+#~ msgid "Google Analytics Key"
+#~ msgstr "Google Analytics Tracking ID"
+
+#~ msgid "Use local texts?"
+#~ msgstr "Lokale Texte verwenden?"

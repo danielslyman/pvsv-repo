@@ -1,0 +1,15 @@
+{
+    "assignees": ["mmuens"],
+    "groupName": "all",
+    "baseBranches": ["master"],
+    "enabledManagers": ["composer"],
+    "ignorePaths": [
+        "**/libraries/**",
+        "inc/api/swagger/**"
+    ],
+    "ignoreDeps": [
+        "roave/security-advisories",
+        "phpunit/phpunit",
+        "squizlabs/php_codesniffer"
+    ]
+}
