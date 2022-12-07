@@ -13,6 +13,14 @@
 			$.each( widgets, function( widget, callback ) {
 				window.elementorFrontend.hooks.addAction( 'frontend/element_ready/' + widget, callback );
 			} );
+
+			/*
+			// Example of usage AJAX success trigger
+			$( document ).on( 'jet-ajax-search/show-results', function( event, searchResults ) {
+				searchResults.find( '.jet-ajax-search__results-item' ).css( 'border', '2px solid red' );
+			} );
+			*/
+
 		},
 
 		initBlocks() {
@@ -142,9 +150,10 @@
 			self.ajaxSettings = window[ settings.handlerId ] || {};
 
 			self.inputChangeHandler = function( event ) {
-				var value = $( event.target ).val();
+				var value = $( event.target ).val(),
+					symbolNumberForStart = 'number' === $.type( data.symbols_for_start_searching ) ? data.symbols_for_start_searching : 2;
 
-				if ( 2 > value.length ) {
+				if ( 'number' === $.type( symbolNumberForStart ) && symbolNumberForStart > value.length ) {
 					self.hideList();
 					return false;
 				}
@@ -260,6 +269,8 @@
 						resultsList.css( 'height', $( settings.listSlideClass, resultsListInner ).eq(0).outerHeight() );
 					} );
 
+					$( document ).trigger( 'jet-ajax-search/show-results', [ resultsHolder ] );
+
 				} else {
 					self.outputMessage( message, 'show' );
 					//self.hideList();
@@ -310,11 +321,12 @@
 			};
 
 			self.focusHandler = function( event ) {
-				var value = event.target.value;
+				var value = event.target.value,
+					symbolNumberForStart = 'number' === $.type( data.symbols_for_start_searching ) ? data.symbols_for_start_searching : 2;
 
 				$( settings.searchFormClass, self ).addClass( formFocusClass );
 
-				if ( 2 > value.length ) {
+				if ( 'number' === $.type( symbolNumberForStart ) && symbolNumberForStart > value.length ) {
 					return;
 				}
 

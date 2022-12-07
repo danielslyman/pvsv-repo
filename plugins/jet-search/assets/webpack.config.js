@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
 	entry: {
@@ -29,7 +30,11 @@ module.exports = {
 	externals: {
 		'react': 'React',
 		'react-dom': 'ReactDOM',
-	}
+	},
+	optimization: {
+		minimize: true,
+		minimizer: [new TerserPlugin()],
+	},
 };
 
 if (process.env.NODE_ENV === 'production') {
@@ -39,12 +44,12 @@ if (process.env.NODE_ENV === 'production') {
 				NODE_ENV: '"production"'
 			}
 		}),
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: false,
-			compress: {
-				warnings: false
-			}
-		}),
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	sourceMap: false,
+		// 	compress: {
+		// 		warnings: false
+		// 	}
+		// }),
 		new webpack.LoaderOptionsPlugin({
 			minimize: true
 		})

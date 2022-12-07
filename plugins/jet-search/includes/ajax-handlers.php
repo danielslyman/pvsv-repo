@@ -279,7 +279,7 @@ if ( ! class_exists( 'Jet_Search_Ajax_Handlers' ) ) {
 
 			add_filter( 'wp_query_search_exclusion_prefix', '__return_empty_string' );
 
-			$search = new WP_Query( $this->search_query );
+			$search = new WP_Query( apply_filters( 'jet-search/ajax-search/query-args', $this->search_query, $this ) );
 
 			if ( function_exists( 'relevanssi_do_query' ) ) {
 				relevanssi_do_query( $search );

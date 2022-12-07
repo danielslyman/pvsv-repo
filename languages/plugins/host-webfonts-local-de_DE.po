@@ -1,0 +1,387 @@
+# Translation of Plugins - OMGF | GDPR/DSVGO Compliant, Faster Google Fonts. Easy. - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - OMGF | GDPR/DSVGO Compliant, Faster Google Fonts. Easy. - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-07-02 08:03:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - OMGF | GDPR/DSVGO Compliant, Faster Google Fonts. Easy. - Stable (latest release)\n"
+
+#. Plugin URI of the plugin
+msgid "https://daan.dev/wordpress/omgf/"
+msgstr "https://daan.dev/wordpress/omgf/"
+
+#: includes/admin/settings/class-advanced.php:100
+msgid "Divi/Elementor Compatibility"
+msgstr "Divi/Elementor-Kompatibilität"
+
+#: includes/admin/settings/class-advanced.php:54
+msgid "Use these settings to make OMGF work with your specific configuration."
+msgstr "Verwende diese Einstellungen, damit OMGF mit deiner spezifischen Konfiguration funktioniert."
+
+#: includes/admin/settings/class-optimize.php:295
+msgid "<a href=\"%s\">Preload font files</a> prior to page rendering to improve perceived loading times. Only use preload for font files that are used above the fold."
+msgstr "<a href=\"%s\">Schriftdateien vorladen</a> vor dem Rendern der Seite, um die wahrgenommenen Ladezeiten zu verbessern. Verwende das Vorladen nur für Schriftdateien, die oberhalb der Falz verwendet werden."
+
+#: includes/admin/settings/class-optimize.php:257
+msgid "Don't know where or how to start optimizing your Google Fonts? That's okay. <a href=\"%s\">This guide</a> will get you sorted."
+msgstr "Du weißt nicht, wo oder wie du mit der Optimierung deiner Google Fonts beginnen sollst? Das ist okay. <a href=\"%s\">Dieser Leitfaden</a> bringt dich weiter."
+
+#: includes/admin/settings/class-advanced.php:82
+msgid "Modify Source URL (Pro)"
+msgstr "Quellen-URL anpassen (Pro)"
+
+#: includes/admin/settings/class-optimize.php:427
+msgid "With this setting enabled, OMGF's optimizations will only be visible to logged in administrators or when <code>?omgf=1</code> is added to an URL in the frontend."
+msgstr "Wenn diese Einstellung aktiviert ist, sind die Optimierungen von OMGF nur für angemeldete Administratoren sichtbar oder wenn <code>?omgf=1</code> sie zu einer URL im Frontend hinzugefügt werden."
+
+#: includes/admin/settings/class-optimize.php:424
+msgid "Test Mode"
+msgstr "Testmodus"
+
+#: includes/admin/settings/class-advanced.php:69
+msgid "(for this site)"
+msgstr "(für diese Seite)"
+
+#: includes/admin/settings/class-advanced.php:69
+msgid "Downloaded stylesheets and font files %s are stored in: <code>%s</code>."
+msgstr "Heruntergeladene Stylesheets und Schriftdateien %s werden gespeichert in: <code>%s</code>."
+
+#: includes/class-ajax.php:76 includes/class-ajax.php:132
+#: includes/class-ajax.php:161 includes/class-ajax.php:222
+#: includes/class-ajax.php:257
+msgid "Hmmm, you're not supposed to be here."
+msgstr "Hmmm, du solltest nicht hier sein."
+
+#: includes/class-admin.php:226
+msgid "OMGF's cached stylesheets don't reflect the current settings. Refresh the cache from the <a href=\"%s\">Task Manager</a>."
+msgstr "Die zwischengespeicherten Stylesheets von OMGF spiegeln nicht die aktuellen Einstellungen wider. Aktualisiere den Cache über den <a href=\"%s\">Task-Manager</a>."
+
+#: includes/admin/settings/class-optimize.php:401
+msgid "After clicking <strong>Save & Optimize</strong>, this section will be populated with any Google Fonts (along with requested styles and available options) requested on <code>%s</code>. The list will grow organically if other Google Fonts stylesheets are discovered throughout your site."
+msgstr "Nachdem du auf <strong>Speichern & Optimieren</strong> geklickt hast, wird dieser Abschnitt mit allen Google Fonts (zusammen mit den angeforderten Stilen und verfügbaren Optionen) gefüllt, die am <code>%s</code> angefordert wurden. Die Liste wächst organisch, wenn andere Google Fonts-Stylesheets auf deiner Website entdeckt werden."
+
+#: includes/admin/settings/class-optimize.php:377
+msgid "This list is populated with all Google Fonts stylesheets captured and downloaded throughout your site. It will grow organically if other Google Fonts stylesheets are discovered throughout your site."
+msgstr "Diese Liste wird mit allen Google Fonts-Stylesheets gefüllt, die auf deiner Website erfasst und heruntergeladen wurden. Es wird organisch wachsen, wenn andere Google Fonts Stylesheets auf deiner Website entdeckt werden."
+
+#: includes/admin/settings/class-optimize.php:140
+msgid "<strong>Not Found</strong>. Stylesheet was detected once, but is missing now. You can safely remove it."
+msgstr "<strong>Nicht gefunden</strong>. Stylesheet wurde einmal erkannt, fehlt aber jetzt. Du kannst es sicher entfernen."
+
+#: includes/admin/settings/class-optimize.php:139
+msgid "<strong>Stale</strong>. Settings were changed and the stylesheet's content do not reflect those changes."
+msgstr "<strong>Abgestanden</strong>. Die Einstellungen wurden geändert, und der Inhalt des Stylesheets spiegelt diese Änderungen nicht wider."
+
+#: includes/admin/settings/class-optimize.php:138
+msgid "<strong>Unloaded</strong>. Stylesheet exists, but is not loaded in the frontend."
+msgstr "<strong>Entladen</strong>. Stylesheet existiert, wird aber nicht in das Frontend geladen."
+
+#: includes/admin/settings/class-optimize.php:137
+msgid "<strong>Found</strong>. Stylesheet exists on your file system."
+msgstr "<strong>Gefunden</strong>. Stylesheet ist in deinem Dateisystem vorhanden."
+
+#: includes/admin/settings/class-optimize.php:134
+msgid "Legend"
+msgstr "Legende"
+
+#: includes/admin/settings/class-optimize.php:123
+msgid "The stylesheets in the cache do not reflect the current settings. Either <a href=\"#\" id=\"omgf-cache-refresh\">refresh</a> the cache (and maintain settings) or <a href=\"#\" id=\"omgf-cache-flush\">flush</a> it and start over."
+msgstr "Die Stylesheets im Cache spiegeln nicht die aktuellen Einstellungen wieder. <a href=\"#\" id=\"omgf-cache-refresh\">Aktualisiere</a> entweder den Cache (und behalte die Einstellungen bei) oder <a href=\"#\" id=\"omgf-cache-flush\">leeren</a> ihn und beginne von vorne."
+
+#: includes/admin/settings/class-optimize.php:119
+msgid "Configure"
+msgstr "Konfigurieren"
+
+#: includes/admin/settings/class-optimize.php:119
+msgid "Manage %s"
+msgstr "Verwalten %s"
+
+#: includes/admin/settings/class-optimize.php:103
+msgid "Cache Status"
+msgstr "Cachestatus"
+
+#: includes/admin/settings/class-optimize.php:84
+msgid "Task Manager"
+msgstr "Aufgabenmanager"
+
+#: includes/admin/settings/class-detection.php:114
+msgid "Process Local Stylesheets"
+msgstr "Lokale Stylesheets verarbeiten"
+
+#: includes/admin/settings/class-detection.php:91
+msgid "By default, OMGF scans each page for mentions of URLs pointing to fonts.googleapis.com. If you need OMGF to \"dig deeper\", e.g. inside a theme's/plugin's CSS stylesheets or (Web Font Loader) JS files, <a href=\"%s\" target=\"_blank\">enable these options</a> to increase its level of detection. Best used in combination with a page caching plugin."
+msgstr "Standardmäßig durchsucht OMGF jede Seite nach Erwähnungen von URLs, die auf fonts.googleapis.com verweisen. Wenn du OMGF benötigst, um „tiefer zu graben“, z.&nbsp;B. in den CSS-Stylesheets oder (Web Font Loader) JS-Dateien eines Themes/Plugins, <a href=\"%s\" target=\"_blank\">aktiviere diese Optionen</a> , um die Erkennungsrate zu erhöhen. Am besten benutzt du das in Kombination mit einem Seiten-Caching-Plugin."
+
+#: includes/admin/settings/class-detection.php:47
+msgid "These settings affect the detection mechanism and in which areas it searches (i.e. how deep it digs) to find Google Fonts. If you want to remove (instead of replace) the Google Fonts your WordPress configuration currently uses, set <strong>Google Fonts Processing</strong> to Remove."
+msgstr "Diese Einstellungen beeinflussen den Erkennungsmechanismus und in welchen Bereichen gesucht wird (d.h. wie tief er gräbt), um Google Fonts zu finden. Wenn du die Google Fonts, die deine WordPress-Konfiguration derzeit verwendet, entfernen (anstatt sie zu ersetzen) möchtest, legen <strong>Google Fonts Processing</strong> auf Remove fest."
+
+#: includes/admin/settings/class-advanced.php:87
+msgid "Modify the <code>src</code> attribute for font files and stylesheets generated by OMGF Pro. This can be anything; from an absolute URL pointing to your CDN (e.g. <code>%s</code>) to an alternate relative URL (e.g. <code>/renamed-wp-content-dir/alternate/path/to/font-files</code>) to work with <em>security thru obscurity</em> plugins. Enter the full path to OMGF's files. Default: (empty)"
+msgstr "Ändere das <code>src</code>-Attribut für Schriftdateien und -Stylesheets, die von OMGF Pro generiert wurden. Das kann alles sein; von einer absoluten URL, die auf dein CDN verweist (z. B. <code>%s</code>>) zu einer alternativen relativen URL (z.&nbsp;B. <code>/umbenanntes-wp-content-verzeichnis/alternativer/pfad/zu/schrift-dateien</code>), um mit <em>Sicherheits- über Verschleierungs-Plugins</em> zu arbeiten. Gib den vollständigen Pfad zu den OMGF-Dateien ein. Standard: (leer)"
+
+#: includes/admin/settings/class-optimize.php:128
+msgid "No stylesheets found. <a href=\"#\" id=\"omgf-save-optimize\">Start optimization</a>?"
+msgstr "Keine Stylesheets gefunden. <a href=\"#\" id=\"omgf-save-optimize\">Starte Optimierung</a>?"
+
+#: includes/admin/settings/class-optimize.php:119
+msgid "stored in %s"
+msgstr "gespeichert in %s"
+
+#: includes/class-optimize.php:83
+msgid "OMGF couldn't find required stylesheet handle parameter while attempting to talk to API. Values sent were <code>%s</code> and <code>%s</code>."
+msgstr "OMGF konnte beim Versuch, mit der API zu kommunizieren, den erforderlichen Stylesheet-Handle-Parameter nicht finden. Gesendete Werte waren <code>%s</code> und <code>%s</code>."
+
+#: includes/admin/settings/class-optimize.php:298
+msgid "When the <a href=\"%s\">Replace option</a> is checked, the selected Fallback Font Stack will replace the corresponding Google Font family, instead of functioning as a fallback."
+msgstr "Wenn die <a href=\"%s\">Option Ersetzen</a> aktiviert ist, ersetzt der ausgewählte Fallback-Schriftstapel die entsprechende Google-Font-Familie, anstatt als Fallback zu fungieren."
+
+#: includes/admin/settings/class-optimize.php:298
+msgid "Replace (Pro)"
+msgstr "Ersetzen (Pro)"
+
+#: includes/admin/settings/class-help.php:68
+msgid "Coded with %s by"
+msgstr "Codiert mit %s von"
+
+#: includes/class-download.php:82
+msgid "OMGF encountered an error while downloading fonts"
+msgstr "OMGF ist beim Herunterladen von Schriftarten auf einen Fehler gestoßen"
+
+#: includes/admin/settings/class-help.php:56
+msgid "Troubleshooting Guide"
+msgstr "Leitfaden zur Fehlerbehebung"
+
+#: includes/admin/settings/class-detection.php:115
+msgid "Scan stylesheets loaded by your theme and plugins for <code>@import</code> and <code>@font-face</code> statements loading Google Fonts and process them."
+msgstr "Scanne die Stylesheets, die von deinem Theme und Plugins geladen werden <code>@import</code>, nach <code>@font-face</code>-Anweisungen, die Google Fonts laden, und verarbeite diese."
+
+#: includes/class-admin.php:117
+msgid "Thank you for updating OMGF to v%s! This version contains database changes. <a href=\"%s\">Verify your settings</a> and make sure everything is as you left it or, <a href=\"%s\">view the changelog</a> for details. "
+msgstr "Vielen Dank für die Aktualisierung von OMGF auf v%s! Diese Version enthält Änderungen an der Datenbank. <a href=\"%s\">Überprüfe deine Einstellungen</a> und vergewissere dich, dass alles so ist, wie du es verlassen hast, oder schaue dir <a href=\"%s\">das Änderungsprotokoll</a> für Details an. "
+
+#: includes/admin/settings/class-optimize.php:322
+msgid "None (default)"
+msgstr "Keine (Standard)"
+
+#: includes/admin/settings/class-advanced.php:84
+msgid "e.g. https://cdn.mydomain.com/alternate/relative-path"
+msgstr "z.B. https://cdn.mydomain.com/alternate/relative-path"
+
+#: includes/admin/class-settings.php:491
+msgid "Recently tagged <a target=\"_blank\" href=\"%s\"><strong>#OMGF</strong></a> on my blog:"
+msgstr "Kürzlich wurde <a target=\"_blank\" href=\"%s\"><strong>#OMGF</strong></a> in meinem Blog markiert:"
+
+#: includes/class-omgf.php:288
+msgid "This update includes major changes, please <a href=\"%s\" target=\"_blank\">read this</a> before continuing."
+msgstr "Dieses Update enthält wichtige Änderungen, bitte <a href=\"%s\" target=\"_blank\">lies dies</a>, bevor du fortfährst."
+
+#: includes/admin/settings/class-advanced.php:150
+msgid "Remove Settings/Files At Uninstall"
+msgstr "Einstellungen/Dateien bei der Deinstallation entfernen"
+
+#: includes/admin/settings/class-advanced.php:66
+msgid "Fonts Cache Directory"
+msgstr "Cache-Verzeichnis leeren"
+
+#: includes/admin/settings/class-optimize.php:186
+msgid "Select which value to set the font-display attribute to. Defaults to Swap (recommended)."
+msgstr "Wähle aus, auf welchen Wert das Attribut \"Schriftart-Anzeige\" gesetzt werden soll. Der Standardwert ist Swap (empfohlen)."
+
+#: includes/admin/class-settings.php:320
+msgid "Help"
+msgstr "Hilfe"
+
+#: includes/admin/settings/class-help.php:64
+msgid "Tweet about it!"
+msgstr "Tweete darüber!"
+
+#: includes/admin/settings/class-help.php:63
+msgid "Write a 5-star Review or,"
+msgstr "Schreibe eine 5-Sterne-Bewertung oder,"
+
+#: includes/admin/settings/class-help.php:61
+msgid "Support %s & Spread the Word!"
+msgstr "Unterstütze %s und verbreite die Nachricht!"
+
+#: includes/admin/settings/class-help.php:57
+msgid "Get Support"
+msgstr "Unterstützung erhalten"
+
+#: includes/admin/settings/class-help.php:55
+msgid "FAQ"
+msgstr "Häufige Fragen"
+
+#: includes/admin/settings/class-help.php:54
+msgid "User Manual"
+msgstr "Benutzerhandbuch"
+
+#: includes/admin/settings/class-help.php:53
+msgid "Quick Start Guide"
+msgstr "Schnellstart-Anleitung"
+
+#: includes/admin/settings/class-help.php:45
+msgid "Need help configuring %s? Please refer to the links below to get you started."
+msgstr "Benötigst du Hilfe bei der Konfiguration von %s? Die nachstehenden Links helfen dir weiter."
+
+#: includes/admin/settings/class-help.php:27
+msgid "Help & Documentation"
+msgstr "Hilfe & Dokumentation"
+
+#: includes/admin/settings/class-optimize.php:318
+msgid "Load all"
+msgstr "Alle laden"
+
+#: includes/admin/settings/class-optimize.php:318
+msgid "Unload all"
+msgstr "Alle entladen"
+
+#: includes/admin/settings/class-optimize.php:318
+msgid "In most situations you can safely unload all Italic font styles. Modern browsers are capable of mimicking Italic font styles."
+msgstr "In den meisten Situationen kannst du alle kursiven Schriftstile sicher entladen. Moderne Browser sind in der Lage, kursive Schriftstile zu imitieren."
+
+#: includes/admin/settings/class-optimize.php:318
+msgid "Unload italics"
+msgstr "Kursivschrift entladen"
+
+#: includes/admin/settings/class-optimize.php:312
+msgid "Stylesheet handle: %s"
+msgstr "Stylesheet bearbeiten: %s"
+
+#: includes/admin/settings/class-detection.php:123
+msgid "Process Google Fonts loaded from <code>fonts.googleapis.com/earlyaccess</code> or <code>fonts.gstatic.com/ea</code>."
+msgstr "Verarbeitet Stylesheets, die von <code>fonts.googleapis.com/earlyaccess</code> oder <code>fonts.gstatic.com/ea</code> geladen wurden."
+
+#: includes/admin/settings/class-detection.php:122
+msgid "Process Early Access"
+msgstr "Prozess Frühzugang"
+
+#: includes/admin/class-settings.php:172
+msgid "Save & Optimize"
+msgstr "Speichern & Optimieren"
+
+#: includes/optimize/class-run.php:99
+msgid "If you're using any 3rd party optimization plugins (e.g. WP Rocket, Autoptimize, W3 Total Cache, etc.) make sure to flush their caches for OMGF's optimizations to take effect."
+msgstr "Wenn du irgendwelche Optimierungs-Plugins von Drittanbietern verwendest (z.B. WP Rocket, Autoptimize, W3 Total Cache, etc.), stelle sicher, dass du deren Caches leerst, damit die Optimierungen von OMGF wirksam werden."
+
+#: includes/admin/settings/class-optimize.php:70
+msgid "To install additional Google Fonts, an add-on is required, which can be downloaded <a href=\"%s\" target=\"blank\">here</a>."
+msgstr "Um zusätzliche Google Fonts zu installieren, wird ein Add-on benötigt, das <a href=\"%s\" target=\"blank\">hier</a> heruntergeladen werden kann."
+
+#: includes/admin/settings/class-detection.php:25
+msgid "Google Fonts Detection Settings"
+msgstr "Einstellungen für die Erkennung von Google Fonts"
+
+#: includes/admin/settings/class-optimize.php:294
+msgid "Weight"
+msgstr "Gewichtung"
+
+#: includes/admin/settings/class-optimize.php:293
+msgid "Style"
+msgstr "Aussehen"
+
+#: includes/admin/settings/class-optimize.php:67
+msgid "These settings affect the downloaded files and generated stylesheet(s). If you're simply looking to replace your Google Fonts for locally hosted copies, the default settings should suffice."
+msgstr "Diese Einstellungen wirken sich auf die heruntergeladenen Dateien und das/die generierte(n) Stylesheet(s) aus. Wenn du lediglich deine Google-Schriftarten durch lokal gehostete Kopien ersetzen möchtest, sollten die Standardeinstellungen ausreichen."
+
+#: includes/admin/class-settings.php:302
+msgid "Detection Settings"
+msgstr "Erkennungseinstellungen"
+
+#: includes/optimize/class-run.php:96
+msgid "Optimization completed successfully."
+msgstr "Optimierung erfolgreich abgeschlossen."
+
+#: includes/optimize/class-run.php:115
+msgid "OMGF encountered an error while fetching this site's frontend HTML"
+msgstr "OMGF ist beim Holen des Frontend-HTML dieser Website auf einen Fehler gestoßen"
+
+#: includes/class-ajax.php:172
+msgid "OMGF encountered an error while emptying the cache directory: "
+msgstr "OMGF ist beim Leeren des Cache-Verzeichnisses auf einen Fehler gestoßen: "
+
+#: includes/admin/settings/class-builder.php:48
+msgid "<a href=\"%s\" target=\"_blank\">Upgrade to Pro</a> to unlock this option."
+msgstr "<a href=\"%s\" target=\"_blank\">Upgrade auf Pro</a>, um diese Option zu aktivieren."
+
+#: includes/admin/settings/class-detection.php:119
+msgid "Process <code>webfont.js</code> libraries and the corresponding configuration defining which Google Fonts to load."
+msgstr "Verarbeitet die <code>webfont.js</code>-Bibliotheken und die entsprechende Konfiguration, die festlegt, welche Google Fonts geladen werden sollen."
+
+#: includes/admin/settings/class-detection.php:118
+msgid "Process Webfont Loader"
+msgstr "Webfont-Loader verarbeiten"
+
+#: includes/admin/settings/class-detection.php:111
+msgid "Process all inline <code>@font-face</code> and <code>@import</code> rules loading Google Fonts."
+msgstr "Verarbeitet alle Inline <code>@font-face</code> und <code>@import</code> Regeln, die Google Fonts laden."
+
+#: includes/admin/settings/class-detection.php:110
+msgid "Process Inline Styles"
+msgstr "Inline-Stile verarbeiten"
+
+#: includes/admin/settings/class-detection.php:76
+msgid "Advanced Processing (Pro)"
+msgstr "Erweiterte Verarbeitung (Pro)"
+
+#: includes/admin/settings/class-detection.php:59
+msgid "Google Fonts Processing"
+msgstr "Google Fonts Verarbeitung"
+
+#: includes/admin/settings/class-advanced.php:153
+msgid "Warning! This will remove all settings and cached fonts upon plugin deletion."
+msgstr "Warnung! Beim Löschen des Plugins werden alle Einstellungen und zwischengespeicherten Schriftarten entfernt."
+
+#: includes/admin/class-settings.php:310
+#: includes/admin/settings/class-advanced.php:28
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#: includes/class-ajax.php:169
+msgid "Cache directory successfully emptied."
+msgstr "Cache-Verzeichnis erfolgreich geleert."
+
+#: includes/admin/settings/class-help.php:50
+msgid "Need Help?"
+msgstr "Benötigst du Hilfe?"
+
+#: includes/admin/settings/class-help.php:43
+msgid "Thank you for using %s!"
+msgstr "Danke, dass du %s verwendest!"
+
+#: includes/admin/settings/class-optimize.php:157
+msgid "Empty Cache Directory"
+msgstr "Cache-Verzeichnis leeren"
+
+#: includes/admin/settings/class-optimize.php:119
+msgid "Remove"
+msgstr "Entfernen"
+
+#: includes/admin/settings/class-optimize.php:182
+msgid "Font-Display Option"
+msgstr "Schriftart-Anzeigeoption"
+
+#: includes/admin/class-settings.php:218
+msgid "OMGF | Optimize My Google Fonts"
+msgstr "OMGF | Optimize My Google Fonts"
+
+#: includes/admin/class-settings.php:214
+msgid "You're not cool enough to access this page."
+msgstr "Entschuldigung, aber du darfst auf diese Seite nicht zugreifen."
+
+#: includes/admin/class-settings.php:417
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. Author URI of the plugin
+msgid "https://daan.dev"
+msgstr "https://daan.dev"
+
+#. Plugin Name of the plugin
+msgid "OMGF"
+msgstr "OMGF"

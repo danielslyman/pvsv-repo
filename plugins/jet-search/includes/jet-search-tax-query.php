@@ -93,7 +93,7 @@ class Jet_Search_Tax_Query extends WP_Tax_Query {
 		$clause['terms'] = array_unique( (array) $clause['terms'] );
 
 		if ( is_taxonomy_hierarchical( $clause['taxonomy'] ) && $clause['include_children'] ) {
-			
+
 			$this->transform_query( $clause, 'term_id' );
 
 			$children = array();
@@ -188,7 +188,6 @@ class Jet_Search_Tax_Query extends WP_Tax_Query {
 			'number'                 => 0,
 			'taxonomy'               => $query['taxonomy'],
 			'update_term_meta_cache' => false,
-			'orderby'                => 'none',
 		);
 
 		$args['search'] = is_array( $terms ) ? $terms[0] : $terms;

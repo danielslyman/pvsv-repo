@@ -413,6 +413,7 @@ class Jet_Search_Render {
 			'show_product_rating',
 			'show_result_new_tab',
 			'highlight_searched_text',
+			'symbols_for_start_searching',
 
 			// Navigations
 			'bullet_pagination',

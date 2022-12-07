@@ -46,6 +46,7 @@ if ( ! class_exists( 'Jet_Search_Tools' ) ) {
 		 * @return array
 		 */
 		public static function get_taxonomies( $with_hidden = false ) {
+			
 			$args   = array();
 			$result = array();
 

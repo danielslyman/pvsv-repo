@@ -83,24 +83,31 @@ if ( ! class_exists( 'Jet_Search_Template_Functions' ) ) {
 		 * @return string
 		 */
 		static public function get_post_content( $data, $post ) {
+			
 			$after  = '&hellip;';
 			$length = ( int ) $data['post_content_length'];
 
 			if ( 0 !== $length ) {
-				$source = ! empty( $data['post_content_source'] ) ? $data['post_content_source'] : 'content';
+				
+				$source  = ! empty( $data['post_content_source'] ) ? $data['post_content_source'] : 'content';
+				$content = apply_filters( 'jet-search/template/pre-get-content', false, $source, $post, $data );
 
-				switch ( $source ) {
-					case 'excerpt':
-						$content = $post->post_excerpt;
-						break;
+				if ( false === $content ) {
+					
+					switch ( $source ) {
+						case 'excerpt':
+							$content = $post->post_excerpt;
+							break;
 
-					case 'custom-field':
-						$key     = $data['post_content_custom_field_key'];
-						$content = ! empty( $key ) ? get_post_meta( $post->ID, $key, true ) : '';
-						break;
+						case 'custom-field':
+							$key     = $data['post_content_custom_field_key'];
+							$content = ! empty( $key ) ? get_post_meta( $post->ID, $key, true ) : '';
+							break;
 
-					default:
-						$content = $post->post_content;
+						default:
+							$content = $post->post_content;
+					}
+
 				}
 
 				$content = strip_shortcodes( $content );
@@ -208,7 +215,7 @@ if ( ! class_exists( 'Jet_Search_Template_Functions' ) ) {
 			$meta_position = ! empty( $settings[ $position_key ] ) ? $settings[ $position_key ] : false;
 			$meta_config   = ! empty( $settings[ $config_key ] ) ? $settings[ $config_key ] : false;
 
-			if ( 'yes' !== $meta_show && 'true' !== $meta_show) {
+			if ( 'yes' !== $meta_show && 'true' !== $meta_show ) {
 				return;
 			}
 
@@ -230,7 +237,13 @@ if ( ! class_exists( 'Jet_Search_Template_Functions' ) ) {
 
 				$key      = $meta['meta_key'];
 				$callback = ! empty( $meta['meta_callback'] ) ? $meta['meta_callback'] : false;
-				$value    = get_post_meta( $post->ID, $key, false );
+				
+				$value = apply_filters( 'jet-search/template/pre-get-meta-field', false, $meta, $post, $settings, $position );
+
+				if ( ! $value ) {
+					$value = get_post_meta( $post->ID, $key, false );
+				}
+				
 
 				if ( ! $value ) {
 					continue;
@@ -275,9 +288,11 @@ if ( ! class_exists( 'Jet_Search_Template_Functions' ) ) {
 					? sprintf( '<div class="%1$s__item-label">%2$s</div>', $base, $meta['meta_label'] )
 					: '';
 
+				
+
 				$result .= sprintf(
 					'<div class="%1$s__item %1$s__item-%4$s">%2$s<div class="%1$s__item-value">%3$s</div></div>',
-					$base, $label, $meta_val, $key
+					$base, $label, $meta_val, sanitize_html_class( str_replace( '%', '', $key )  )
 				);
 
 			}

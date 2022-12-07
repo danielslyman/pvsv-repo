@@ -7,6 +7,7 @@ const {
 	ToggleControl,
 	SelectControl,
 	PanelBody,
+    RangeControl,
 } = wp.components;
 
 const {
@@ -88,6 +89,16 @@ const SearchInputControls = props => {
                         search_form_responsive_on_mobile: value
                     } );
                 } }
+            />
+
+            <RangeControl
+                label={ __( 'Minimal Quantity of Symbols for Search' ) }
+                value={ attributes.symbols_for_start_searching }
+                onChange={ value => {
+                    props.setAttributes({ symbols_for_start_searching: value })
+                } }
+                min={ 1 }
+                max={ 10 }
             />
         </PanelBody>
     )

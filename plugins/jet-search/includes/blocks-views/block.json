@@ -46,6 +46,10 @@
 			"type": "boolean",
 			"default": false
 		},
+		"symbols_for_start_searching": {
+			"type": "number",
+			"default": 2
+		},
 		"current_query": {
 			"type": "boolean",
 			"default": false

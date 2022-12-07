@@ -170,6 +170,17 @@ class Jet_Search_Ajax_Search_Widget extends Jet_Search_Widget_Base {
 		);
 
 		$this->add_control(
+			'symbols_for_start_searching',
+			array(
+				'label'   => esc_html__( 'Minimal Quantity of Symbols for Search', 'jet-search' ),
+				'type'    => Controls_Manager::NUMBER,
+				'default' => 2,
+				'max'     => 10,
+				'min'     => 1,
+			)
+		);
+
+		$this->add_control(
 			'show_search_submit',
 			array(
 				'label'     => esc_html__( 'Show Submit Button', 'jet-search' ),

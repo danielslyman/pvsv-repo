@@ -41,6 +41,7 @@ if ( ! class_exists( 'Jet_Search_Assets' ) ) {
 		public function init() {
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'register_styles' ), 99 );
+			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 99 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ), 0 );
 			add_action( 'enqueue_block_editor_assets', array( $this, 'register_scripts' ), 0 );
 			add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_preview_scripts' ), 0 );

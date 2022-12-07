@@ -4,6 +4,14 @@ The best tool for adding complex search functionality to pages built with Elemen
 
 # ChangeLog
 
+# 3.0.3
+* ADD: `jet-search/ajax-search/query-args` filter hook
+* ADD: `jet-search/template/pre-get-content` filter hook
+* ADD: `jet-search/template/pre-get-meta-field` filter hook
+* ADD: `Minimal Quantity of Symbols for Search` option
+* ADD: `jet-ajax-search/show-results` trigger on search AJAX request success
+* FIX: minor issues
+
 # 3.0.2
 * ADD: [Crocoblock/suggestions#5712](https://github.com/Crocoblock/suggestions/issues/5712);
 * ADD: [Crocoblock/suggestions#5742](https://github.com/Crocoblock/suggestions/issues/5742);
